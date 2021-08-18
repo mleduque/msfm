@@ -19,7 +19,7 @@ BEGIN @1061
 
 GROUP @1058
 
-REQUIRE_PREDICATE GAME_IS ~bgee~ @1020
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ @1020
 
 SUBCOMPONENT @1009
 
@@ -167,7 +167,7 @@ BEGIN @1062
 
 GROUP @1058
 
-REQUIRE_PREDICATE GAME_IS ~bgee~ @1020
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ @1020
 
 SUBCOMPONENT @1009
 
@@ -617,7 +617,7 @@ GROUP @1059
 
 REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet iwdee~ @1027
 
-ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
 
 COPY ~msfm/content/bg1_headgear/CEFW4INV.BAM~ ~override~
 COPY ~msfm/content/bg1_headgear/CEMW4INV.BAM~ ~override~
@@ -707,7 +707,7 @@ BEGIN @1011
 
 GROUP @1059
 
-REQUIRE_PREDICATE GAME_IS ~bgee~ @1020
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ @1020
 
 COPY ~msfm/content/bg1_headgear/rgcspec.itm~ ~override~
   	SAY NAME2 @165
@@ -758,7 +758,7 @@ COPY ~msfm/content/bg2_wizhat/rgwhat01.itm~ ~override~
 COPY ~msfm/content/bg2_wizhat/rgwhatts.spl~ ~override~
 	SAY NAME1 @212
 	
-ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
 COPY_EXISTING ~highhedg.sto~ ~override~
 ADD_STORE_ITEM ~rgwhat01~   AFTER  ~wand02~ #0 #0 #0 ~IDENTIFIED~ #1
 END
@@ -796,7 +796,7 @@ COPY ~msfm/content/wand_case/rgwandc1.itm~ ~override~
 	SAY IDENTIFIED_DESC @211
 	SAY UNIDENTIFIED_DESC @211
 
-ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
 COPY_EXISTING ~highhedg.sto~ ~override~
 ADD_STORE_ITEM ~rgwandc1~   AFTER  ~wand02~ #0 #0 #0 ~IDENTIFIED~ #1
 END
